@@ -1,0 +1,54 @@
+git diff --stat <branch1>^ <branch2>
+(statistical differences between branch1 and branch2)
+
+git branch -d <branch>
+(delete branch only if it has already been merged and pushed with remote branches)
+
+git branch -D <branch>
+(delete branch regardless of merge and push status)
+
+git checkout -b <branch>
+(create branch and move to it)
+
+git fetch
+(check remote repo to see if any changes have been made since your last push)
+(This is unlike git pull in that it does not change your local repository)
+
+git checkout -- <filename>
+(replaces changes in your working tree with the last content in head)
+(changes already added to the index as well as new files, will be kept)
+
+git fetch origin
+git reset --hard origin/master
+(drop all local changes and commits, fetch latest history from the server)
+(and point to your local master branch)
+
+Coverage:
+coverage run --omit=*test* -m unittest
+(run unittests)
+coverage run --omit=$test$ -m unittest
+(for mac)
+
+coverage report
+(display total line coverage of uinttesting)
+
+
+vi <filename> 
+(access VIM editor)
+	VIM:
+		Last line mode: 
+		(You are in last line mode when VIM launches, by default)
+		(if you need to return to last line mode from insert mode: press 'esc' key)
+			:q (quit, exit VIM)
+			:wq (write quit, save and exit VIM)
+		Insert Mode: (To enter insert mode: press 'i' key)
+		(Insert mode allows you to edit the file, use arrow keys to navigate within the text)
+		
+pip install <package> 
+(allows a user to install usefull packages such as coverage and pytest)
+
+Radon:
+radon cc --total-average <filename>
+(calculates cyclomatic complexity of the file)
+radon mi -s <directory name>
+(calculates cyclomatic complexity of every file within the given directory)
