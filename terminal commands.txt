@@ -51,4 +51,4 @@ Radon:
 radon cc --total-average <filename>
 (calculates cyclomatic complexity of the file)
 radon mi -s <directory name>
-(calculates cyclomatic complexity of every file within the given directory)
+(calculates maintainability index of every file within the given directory)
