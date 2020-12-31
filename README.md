@@ -1,2 +1,2 @@
 # cs3250-class-notes
-Class notes and other information relevant to CS3250 (Software Development Tools & Methods)
+Various documents relevant to a project in which I, along with a team of my peers, developed an implementation of the Java Virtual Machine in the Python scripting language. 
